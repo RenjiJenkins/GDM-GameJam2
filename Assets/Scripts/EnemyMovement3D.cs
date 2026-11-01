@@ -63,10 +63,8 @@ public class EnemyMovement3D : MonoBehaviour
 
     Vector3 GetVelocity()
     {
-#if UNITY_6000_0_OR_NEWER
+
         return body.linearVelocity;
-#else
-        return body.velocity;
 #endif
     }
     void SetVelocity(Vector3 velocity)
